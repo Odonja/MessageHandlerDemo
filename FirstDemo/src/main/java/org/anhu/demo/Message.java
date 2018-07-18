@@ -4,6 +4,9 @@ public class Message {
 
 	private int rfid;
 	private int readerid;
+	
+	Message() {	
+	}
 
 	public Message(int rfid, int readerid) {
 		this.rfid = rfid;
