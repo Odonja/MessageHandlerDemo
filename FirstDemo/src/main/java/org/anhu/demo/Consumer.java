@@ -18,13 +18,13 @@ public class Consumer {
 	public List<Message> messageGet() {
 		System.out.println("get message was sent");
 		return messages;
-
 	}
 
 	@RequestMapping(value = "/abc", method = RequestMethod.POST)
-	public void messagePost(@RequestBody Message message) {
+	public Message messagePost(@RequestBody Message message) {
 		System.out.println("Message received is: " + message.toString());
 		messages.add(message);
+		return message;
 	}
 
 	@RequestMapping(value = "/abc", method = RequestMethod.DELETE)
