@@ -1,4 +1,4 @@
-package org.anhu.database;
+package org.anhu.demo.database;
 
 import java.util.List;
 
