@@ -8,29 +8,29 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class FirstDemoApplication {
+public class FirstDemoApplicationTest {
 
-	private static final Logger log = LoggerFactory.getLogger(FirstDemoApplication.class);
+	private static final Logger log = LoggerFactory.getLogger(FirstDemoApplicationTest.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstDemoApplication.class);
+		SpringApplication.run(FirstDemoApplicationTest.class);
 	}
 
 	@Bean
-	public CommandLineRunner demo(ProfileRepository repository) {
+	public CommandLineRunner demo(ProfileRepositoryTest repository) {
 		return (args) -> {
 			// save a couple of customers
-			repository.save(new Profile(11, "Bauer"));
-			repository.save(new Profile(12, "O'Brian"));
-			repository.save(new Profile(13, "Bauer"));
-			repository.save(new Profile(14, "Palmer"));
-			repository.save(new Profile(15, "Dessler"));
+			repository.save(new ProfileTest(11, "Bauer"));
+			repository.save(new ProfileTest(12, "O'Brian"));
+			repository.save(new ProfileTest(13, "Bauer"));
+			repository.save(new ProfileTest(14, "Palmer"));
+			repository.save(new ProfileTest(15, "Dessler"));
 
 			// fetch all customers
 			System.out.println("fetch all");
 			log.info("Customers found with findAll():");
 			log.info("-------------------------------");
-			for (Profile profile : repository.findAll()) {
+			for (ProfileTest profile : repository.findAll()) {
 				log.info(profile.toString());
 			}
 			log.info("");

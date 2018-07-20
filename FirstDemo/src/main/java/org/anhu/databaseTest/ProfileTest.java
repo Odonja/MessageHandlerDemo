@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Profile {
+public class ProfileTest {
 
 	@Id
 	@GeneratedValue
@@ -18,12 +18,12 @@ public class Profile {
 	@Column(nullable = false)
 	private String name;
 
-	protected Profile() {
+	protected ProfileTest() {
 		// no-args constructor required by JPA spec
 		// this one is protected since it shouldn't be used directly
 	}
 
-	public Profile(int rfid, String name) {
+	public ProfileTest(int rfid, String name) {
 		this.rfid = rfid;
 		this.name = name;
 	}
