@@ -29,10 +29,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-activemq</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-websocket</artifactId>
@@ -43,19 +45,23 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.jayway.jsonpath</groupId>
 			<artifactId>json-path</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
@@ -82,28 +88,30 @@
 		</dependency>	
 		
 		<dependency> 
-   <groupId>org.seleniumhq.selenium</groupId> 
-   <artifactId>selenium-java</artifactId> 
-   <version>2.47.1</version> 
-</dependency>
+  			<groupId>org.seleniumhq.selenium</groupId> 
+   			<artifactId>selenium-java</artifactId> 
+		</dependency>
+		
 		<dependency> 
    			<groupId>info.cukes</groupId> 
    			<artifactId>cucumber-java</artifactId> 
    			<version>1.0.2</version> 
    			<scope>test</scope> 
 		</dependency>
+		
 		<dependency> 
    			<groupId>info.cukes</groupId> 
    			<artifactId>cucumber-junit</artifactId> 
    			<version>1.0.2</version> 
    			<scope>test</scope> 
 		</dependency>
+		
 		<dependency> 
-   <groupId>junit</groupId> 
-   <artifactId>junit</artifactId> 
-   <version>4.10</version> 
-   <scope>test</scope> 
-</dependency>
+  		 	<groupId>junit</groupId> 
+   			<artifactId>junit</artifactId> 
+
+   			<scope>test</scope> 
+		</dependency>
 	</dependencies>
 
 	<build>
